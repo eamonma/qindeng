@@ -29,7 +29,7 @@ client.on("message", (msg) => {
 
     const cmd = lat(msg.content.toLowerCase())
 
-    if (cmd.includes("qin") || cmd.includes("qd") || cmd.includes("flushed") || cmd.includes("q d") || cmd.includes("sex") || cmd.includes("deng") || cmd.includes("😳") || msg.author.id === "378976596255571969" || msg.author.id === "138400793761021952" ) {
+    if (cmd.includes("qin") || cmd.includes("qd") || cmd.includes("flushed") || cmd.includes("q d") || cmd.includes("sex") || cmd.includes("deng") || cmd.includes("😳") ) {
         msg.react("😳")
     }
 
