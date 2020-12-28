@@ -33,9 +33,9 @@ client.on("message", (msg) => {
         msg.react("😳")
     }
 
-    // if(cmd.includes("mclovin")) {
-    //     msg.react("😘")
-    // }
+    if(cmd.includes("not fish")) {
+        msg.channel.send("https://tenor.com/view/fish-grill-cooking-food-cook-gif-17171404")
+    }
 
     if(cmd.includes("alfonso")) {
         msg.reply("https://alfonstore.com")
