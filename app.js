@@ -21,7 +21,7 @@ client.on("message", (msg) => {
         msg.react("")
     }
 
-    if (msg.author.id === "792994928773955604" || msg.author.id === "354097352161755136") {
+    if (msg.author.id === "439909239406854145" || msg.author.id === "354097352161755136") {
         if(Math.random() < 0.05) {
             msg.reply("k")
         }
