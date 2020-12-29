@@ -23,7 +23,18 @@ client.on("message", (msg) => {
 
     if (msg.author.id === "439909239406854145" || msg.author.id === "354097352161755136") {
         if(Math.random() < 0.05) {
-            msg.reply("k")
+            return msg.reply("k")
+        }
+        if(Math.random() < 0.1) {
+            const content = msg.content
+            const newContent = content.split().map((letter) => {
+                if(Math.random() < 0.5) {
+                    return letter.toUpperCase()
+                } else {
+                    return letter.toLowerCase()
+                }
+            })
+            msg.reply(newContent)
         }
     }
 
