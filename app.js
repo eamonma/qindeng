@@ -25,7 +25,8 @@ client.on("message", (msg) => {
         if(Math.random() < 0.05) {
             return msg.reply("k")
         }
-        if(Math.random() < 0.1) {
+        // if(Math.random() < 0.1) {
+        if(true) {
             const content = msg.content
             const newContent = content.split().map((letter) => {
                 if(Math.random() < 0.5) {
@@ -34,7 +35,7 @@ client.on("message", (msg) => {
                     return letter.toLowerCase()
                 }
             })
-            msg.reply(newContent)
+            msg.reply(newContent.join(""))
         }
     }
 
