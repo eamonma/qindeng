@@ -25,13 +25,14 @@ client.on("message", (msg) => {
         if(Math.random() < 0.05) {
             return msg.reply("k")
         }
-        if(Math.random() < 0.1) {
+        if(Math.random() < 0.07) {
         // if(true) {
             const content = msg.content
-            const newContent = content.split().map((letter) => {
-                if(Math.random() < 0.5) {
+            const newContent = content.split("").map((letter) => {
+                if (Math.random() < 0.5) {
                     return letter.toUpperCase()
                 } else {
+                    console.log("here");
                     return letter.toLowerCase()
                 }
             })
