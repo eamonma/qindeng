@@ -3,14 +3,14 @@ const c = require("./constants")
 
 const star = (msg) => {
     const cmd = lat(msg.content.toLowerCase())
-    const word = c.STAR_KEYWORDS.findIndex((word) => cmd.includes(word)) + 1
-    if (word) {
+    const word = c.STAR_KEYWORDS.find((word) => cmd.includes(word))
+    let reaction = ""
+    try {
+        reaction = c.STAR_KEYWORDS_REACTION[word]()
+    } catch (e) {}
+    if (word && reaction) {
         msg.channel.send(`GUYS`)
-        msg.channel.send(
-            `WHAT IS ${c.STAR_KEYWORDS_REACTION[
-                word - 1
-            ].toUpperCase()} :smile:`
-        )
+        msg.channel.send(`${reaction.toUpperCase()} :smile:`)
         // msg..reply()
     }
 }

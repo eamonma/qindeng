@@ -4,16 +4,36 @@ const NOT_FISH_REACTION =
 const FLUSHED_EMOJI = "😳"
 
 const KEYWORDS = ["qin", "qd", "flushed", "q d", "sex", "deng", FLUSHED_EMOJI]
-const STAR_KEYWORDS = ["head", "aids", "weed", "joint", "blunt", "lsd", "porn"]
-const STAR_KEYWORDS_REACTION = [
+const STAR_KEYWORDS = [
     "head",
     "aids",
     "weed",
-    "a joint",
-    "a blunt",
+    "joint",
+    "blunt",
     "lsd",
     "porn",
+    "fuck",
+    "shit",
 ]
+
+const swear = () => {
+    if (Math.random() < 0.2) {
+        return "guys swearing is bad dont do it"
+    }
+    return ""
+}
+
+const STAR_KEYWORDS_REACTION = {
+    head: () => "what is head",
+    aids: () => "what is aids",
+    weed: () => "what is weed",
+    joint: () => "what is a joint",
+    blunt: () => "what is a blunt",
+    lsd: () => "what is lsd",
+    porn: () => "what is porn",
+    fuck: swear,
+    shit: swear,
+}
 
 module.exports = {
     NOT_FISH_REACTION,
