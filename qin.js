@@ -25,8 +25,8 @@ const qin = (msg) => {
     }
 
     if (msg.author.id === "194216401420943360") {
-        if (Math.random() < 0.9) {
-            msg.reply(" you might be alfonso.")
+        if (Math.random() < 0.2) {
+            msg.react("😤")
         }
     }
 
