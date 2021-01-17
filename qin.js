@@ -6,10 +6,10 @@ const qin = (msg) => {
         msg.author.id === "439909239406854145" ||
         msg.author.id === "354097352161755136"
     ) {
-        if (Math.random() < 0.05) {
+        if (Math.random() < 0.01) {
             return msg.reply("k")
         }
-        if (Math.random() < 0.07) {
+        if (Math.random() < 0.02) {
             // if(true) {
             const content = msg.content
             const newContent = content.split("").map((letter) => {

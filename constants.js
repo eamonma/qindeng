@@ -17,7 +17,7 @@ const STAR_KEYWORDS = [
 ]
 
 const swear = () => {
-    if (Math.random() < 0.2) {
+    if (Math.random() < 0.05) {
         return "guys swearing is bad dont do it"
     }
     return ""
