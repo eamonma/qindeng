@@ -8,7 +8,7 @@ const star = (msg) => {
     try {
         reaction = c.STAR_KEYWORDS_REACTION[word]()
     } catch (e) {}
-    if (word && reaction) {
+    if (word && reaction && Math.random() < 0.2) {
         msg.channel.send(`GUYS`)
         msg.channel.send(`${reaction.toUpperCase()} :smile:`)
         // msg..reply()
